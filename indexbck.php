@@ -8,6 +8,7 @@
 
 // Autoload Composer و فایل‌های اصلی پروژه
 //require_once ROOT_PATH . '/vendor/autoload.php';
+//require_once ROOT_PATH . '/config/database.php';
 
 //echo "<h1>Welcome to the Initial Project Setup!</h1>";
 //echo "<p>Core files are loaded. Routing and other functionalities will be added in subsequent steps.</p>";
