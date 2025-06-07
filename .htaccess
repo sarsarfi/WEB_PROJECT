@@ -1,0 +1,11 @@
+# فایل .htaccess در ریشه پروژه (همان جایی که index.php قرار دارد)
+
+RewriteEngine On
+
+# اگر فایل یا پوشه‌ای وجود ندارد، درخواست را به index.php بفرست
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# فعال‌سازی UTF-8 برای جلوگیری از مشکل کاراکتر فارسی
+AddDefaultCharset UTF-8
