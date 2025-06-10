@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    <?php if (!isset($navigation_rendered)): ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="<?= get_base_path() ?>/">فروشگاه من</a>
@@ -33,6 +34,7 @@
             </div>
         </div>
     </nav>
+    <?php $navigation_rendered = true; endif; ?>
 
     <div class="container mt-4">
         <?php if (!empty($session_error)): ?>
